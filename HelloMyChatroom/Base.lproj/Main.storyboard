@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloMyChatroom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ler-2i-qgD">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ZO8-Kf-fWv"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFa-Bm-VpZ">
+                                <rect key="frame" x="16" y="68" width="68" height="30"/>
+                                <state key="normal" title="Send Text"/>
+                                <connections>
+                                    <action selector="sendTextbt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GV9-vP-E1m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4U-YF-YCX">
+                                <rect key="frame" x="113" y="68" width="80" height="30"/>
+                                <state key="normal" title="Send Photo"/>
+                                <connections>
+                                    <action selector="sendPhotobt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvo-m9-C92"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKY-Iv-PFK">
+                                <rect key="frame" x="306" y="68" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshbt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRj-ER-0BR"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04O-q2-5kx" customClass="ChatView" customModule="HelloMyChatroom" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="113" width="375" height="554"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aFa-Bm-VpZ" firstAttribute="top" secondItem="Ler-2i-qgD" secondAttribute="bottom" constant="18" id="0wT-Mw-9xA"/>
+                            <constraint firstItem="04O-q2-5kx" firstAttribute="top" secondItem="aFa-Bm-VpZ" secondAttribute="bottom" constant="15" id="39o-F4-7KH"/>
+                            <constraint firstItem="o4U-YF-YCX" firstAttribute="leading" secondItem="aFa-Bm-VpZ" secondAttribute="trailing" constant="29" id="BAG-3z-MHG"/>
+                            <constraint firstItem="Ler-2i-qgD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BAh-xn-3ui"/>
+                            <constraint firstItem="04O-q2-5kx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jlx-d7-Nhv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ler-2i-qgD" secondAttribute="trailing" constant="16" id="LtL-a4-0lu"/>
+                            <constraint firstItem="aFa-Bm-VpZ" firstAttribute="leading" secondItem="Ler-2i-qgD" secondAttribute="leading" id="aRY-ec-mod"/>
+                            <constraint firstItem="04O-q2-5kx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d3m-Hn-2d7"/>
+                            <constraint firstItem="wKY-Iv-PFK" firstAttribute="trailing" secondItem="Ler-2i-qgD" secondAttribute="trailing" id="gIo-Uj-YDt"/>
+                            <constraint firstItem="Ler-2i-qgD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mPo-FL-QvA"/>
+                            <constraint firstItem="o4U-YF-YCX" firstAttribute="top" secondItem="Ler-2i-qgD" secondAttribute="bottom" constant="18" id="rgq-ny-MNL"/>
+                            <constraint firstItem="wKY-Iv-PFK" firstAttribute="top" secondItem="Ler-2i-qgD" secondAttribute="bottom" constant="18" id="sly-fM-gkC"/>
+                            <constraint firstItem="04O-q2-5kx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="z8U-TW-f7G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chatView" destination="04O-q2-5kx" id="utY-e4-Twz"/>
+                        <outlet property="inputTextField" destination="Ler-2i-qgD" id="5hn-jj-cAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
