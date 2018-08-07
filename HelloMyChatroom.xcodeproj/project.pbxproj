@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		381374D120E6120F00685A83 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381374D020E6120F00685A83 /* UIImage+Resize.swift */; };
 		381374D320E62F9500685A83 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381374D220E62F9500685A83 /* LogManager.swift */; };
+		381E0FB921199825007B0211 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 381E0FB821199825007B0211 /* .gitignore */; };
 		3831E84420E344D700494E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831E84320E344D700494E00 /* AppDelegate.swift */; };
 		3831E84620E344D700494E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3831E84520E344D700494E00 /* ViewController.swift */; };
 		3831E84920E344D700494E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3831E84720E344D700494E00 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		1EB690E6837C992E7C2CC019 /* Pods-HelloMyChatroom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMyChatroom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMyChatroom/Pods-HelloMyChatroom.debug.xcconfig"; sourceTree = "<group>"; };
 		381374D020E6120F00685A83 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		381374D220E62F9500685A83 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		381E0FB821199825007B0211 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		3831E84020E344D700494E00 /* HelloMyChatroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMyChatroom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3831E84320E344D700494E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3831E84520E344D700494E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		3831E83720E344D700494E00 = {
 			isa = PBXGroup;
 			children = (
+				381E0FB821199825007B0211 /* .gitignore */,
 				3831E84220E344D700494E00 /* HelloMyChatroom */,
 				3831E84120E344D700494E00 /* Products */,
 				259C878D58087E9B5B1D4E59 /* Pods */,
@@ -193,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381E0FB921199825007B0211 /* .gitignore in Resources */,
 				3831E84E20E344DA00494E00 /* LaunchScreen.storyboard in Resources */,
 				3831E86620E5CEA700494E00 /* fromMe.png in Resources */,
 				3831E84B20E344DA00494E00 /* Assets.xcassets in Resources */,
